@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Alif</title>
+    <link rel="stylesheet" href="uconpreloadstyle.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/5a01f232c4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <div class="preloader">
+        <div class="preloader-content">
+          <div class="preloader-logo">
+            <span class="preloader-logo__letter bold">A</span>
+            <span class="preloader-logo__letter bold"> </span>
+            <span class="preloader-logo__letter bold"> </span>
+            <span class="preloader-logo__letter bold">P</span>
+            <span class="preloader-logo__letter bold">R</span>
+            <span class="preloader-logo__letter bold">O</span>
+            <span class="preloader-logo__letter bold">J</span>
+            <span class="preloader-logo__letter bold">E</span>
+            <span class="preloader-logo__letter bold">C</span>
+            <span class="preloader-logo__letter bold">T</span>
+            <span class="preloader-logo__letter bold"> </span>
+            <span class="preloader-logo__letter bold"> </span>
+            <span class="preloader-logo__letter bold">B</span>
+            <span class="preloader-logo__letter bold">Y</span>
+          </div>
+        </div>
+        <div class="preloader-img">
+            <a class="preLoad-link" href="teamalif.com"><img class="preloader-img1" src="ALIF.png" alt="team alif logo"></a>
+        </div>
+      </div>
+      <div class="main" style="background-color: white">
+        <div class="nav">
+          <div class="icons"><span class="navcon"><i class="fas fa-home"></i></span></div>
+          <div class="icons"><span class="navcon"><i class="fab fa-twitter-square"></i></span></div>
+          <div class="icons"><span class="navcon"><i class="fab fa-facebook-square"></i></span></div>
+          <div class="icons"><span class="navcon"><i class="fab fa-instagram"></i></span></div>
+          <div class="icons"><span class="navcon"><i class="fas fa-envelope"></i></span></div>
+          <div class="icons"><span class="navcon"><i class="fas fa-globe"></i></span></div>
+        </div>
+        <div class="section">
+            <div class="header">
+                <div class="logo"><img class="limg" src="u-connect.png" alt=""></div>
+                <!-- <div class="navmenu">
+                  <div class="menu">Free Services</div>
+                  <div class="menu">Paid Services</div>
+                  <div class="menu">Blogs</div>
+                </div> -->
+                <div class="sign"><span class="log"><span class="log1"><a href="signup.html">Log in</a></span> <span class="log2"><a href="signin.html">Sign up</a></span> </span></div>
+              </div>
+              <div class="better">
+                <div class="para">
+                  <span class="button">WE CONNECT YOU!</span>
+                  <button class="start">Let's Connect</button>
+                </div>
+              </div>
+              <div class="bg">
+                
+                </div>
+        </div>
+      </div>
+      <script>
+          const loader = document.querySelector(".preloader");
+          const main = document.querySelector(".main");
+          function init() {
+            setTimeout(()=>{
+              loader.style.opacity=0;
+              loader.style.display="none";
+              main.style.display="flex";
+            },2200);
+          }
+          init();
+      </script>
+</body>
+</html>

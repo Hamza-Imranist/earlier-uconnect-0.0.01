@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uconnect</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a01f232c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.js"></script>
+</head>
+<body>
+    <!-- --------------------- -->
+        <div class="preloader">
+                <div class="preloader-content">
+                  <div class="preloader-logo">
+                    <span class="preloader-logo__letter bold">A</span>
+                    <span class="preloader-logo__letter bold"> </span>
+                    <span class="preloader-logo__letter bold"> </span>
+                    <span class="preloader-logo__letter bold">P</span>
+                    <span class="preloader-logo__letter bold">R</span>
+                    <span class="preloader-logo__letter bold">O</span>
+                    <span class="preloader-logo__letter bold">J</span>
+                    <span class="preloader-logo__letter bold">E</span>
+                    <span class="preloader-logo__letter bold">C</span>
+                    <span class="preloader-logo__letter bold">T</span>
+                    <span class="preloader-logo__letter bold"> </span>
+                    <span class="preloader-logo__letter bold"> </span>
+                    <span class="preloader-logo__letter bold">B</span>
+                    <span class="preloader-logo__letter bold">Y</span>
+                  </div>
+                </div>
+                <div class="preloader-img">
+                    <a class="preLoad-link" href="teamalif.com"><img class="preloader-img1" src="ALIF.png" alt="team alif logo"></a>
+                </div>
+              </div>
+              <!-- ---------------------- -->
+    <div class="wrapper">
+      <div class="main">
+        <div class="logo">
+            <img src="u-connect.png" alt="logo">
+        </div>
+        <div class="nav">
+          <div><span class="nav-btn">Home</span></div>
+          <div><span class="nav-btn">Free Services</span></div>
+          <div><span class="nav-btn">Paid Services</span></div>
+          <div><span class="nav-btn">Blogs</span></div>
+        </div>
+        <div class="start-text">
+            <span class="motto">WE CONNECT YOU!</span>
+            <p class="button-container"> <span class="button"><a href="form.html">Lets Connect</a></span></p>
+            <div class="social">
+                <div class="icons"><i class="fab fa-facebook-square"></i></div>    
+                <div class="icons"><i class="fas fa-envelope"></i></div>
+                <div class="icons"><i class="fas fa-globe"></i></div>
+            </div>
+        </div>
+        <div class="animation">
+          <div class="circle"></div>
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+        </div>
+    </div>
+    <!-- ---------------------- -->
+    
+    <!-- ---------------------- -->
+   
+    </div>
+    <div class="bg">
+
+    </div>
+    <div class="main1" onmouseover="typeWriter()">
+      <div class="header">
+        <p>What is U-Connect?</p>
+      </div>
+      <div class="para">
+        <p id="demo"></p>
+      </div>
+      <div class="animator">
+        <div class="slider">
+          <img src="teamChat.png" alt="">
+          <img src="teamChat1.png" alt="">
+          <img src="teamChat2.png" alt="">
+          <img src="teamChat3.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="main2">
+      <div class="heading">
+        <h1 style="color: #28b370;text-align:center;font-size: 5vw;">Why Connect with us?</h1>
+      </div>
+      <div class="card-container">
+            <div class="card1">
+                <i class="fas fa-book-reader"></i>
+                <h3>Free Services</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga ipsa adipisci dolorem placeat voluptatem aperiam id, a voluptate corporis, reprehenderit suscipit esse eligendi. Error aliquam sunt ipsa adipisci modi?</p>
+            </div>
+            <div class="card2">
+                <i class="fas fa-book-reader"></i>
+                <h3>Paid Services</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga ipsa adipisci dolorem placeat voluptatem aperiam id, a voluptate corporis, reprehenderit suscipit esse eligendi. Error aliquam sunt ipsa adipisci modi?</p>
+            </div>
+            <div class="card3">
+                <i class="fas fa-book-reader"></i>
+                <h3>Blogs</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga ipsa adipisci dolorem placeat voluptatem aperiam id, a voluptate corporis, reprehenderit suscipit esse eligendi. Error aliquam sunt ipsa adipisci modi?</p>
+            </div>
+      </div>
+    </div>
+    <!-- ////////////////////// -->
+    <a id="popuplink" href="#inline" style="display:none;"></a>
+<div id="inline" style="display:none;text-align:center;">
+<img src="https://thebeachfurniture.co.nz/newbeach-logo.png" alt="" id="logo">
+<h3 style="margin-top:20px;">This is demo/prototype of U-Connect</h3>
+<p><a href="javascript:;" onclick="jQuery.fancybox.close();" style="background-color:#333;padding:5px 10px;color:#fff;border-radius:5px;text-decoration:none;">Close</a></p>
+</div>
+    <script>
+            const loader = document.querySelector(".preloader");
+            const main = document.querySelector(".main");
+            function init() {
+              setTimeout(()=>{
+                loader.style.opacity=0;
+                loader.style.display="none";
+                main.style.display="grid";
+              },1000);
+            }
+            init();
+            /////////////////// ///////////////
+            var i = 0;
+            var txt = ' U-Connect is a social platform with a web based technology that enables the development, deployment and management of the solution of different problems that students of different universities face. The initial and the first phase is for UET Taxila where every student can put forward their concern regarding the services provided and can get as many solutions as possible from the domain experts and colleagues of particular field. This social platform will lessen the distances and make the circle a mouth piece of downtrodden.';
+            var speed = 60;
+
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            // /////////////////////////////////
+            jQuery(document).ready(function () {
+    function openFancybox() {
+        setTimeout(function () {
+            jQuery('#popuplink').trigger('click');
+        }, 2700);
+    };
+    var visited = jQuery.cookie('visited');
+    if (visited == 'no') {
+         // second page load, cookie active
+    } else {
+        openFancybox(); // first page load, launch fancybox
+    }
+    jQuery.cookie('visited', 'yes', {
+        expires: 365 // the number of days cookie  will be effective
+    });
+    jQuery("#popuplink").fancybox({modal:true, maxWidth: 400, overlay : {closeClick : true}});
+});
+        </script>
+</body>
+</html>

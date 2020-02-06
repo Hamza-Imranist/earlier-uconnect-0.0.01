@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chair {
+    height: 60%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+.s1 {
+    background-image: url("couch.jpg");
+    background-size: cover;
+}
+.s1 h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: 64px;
+    background: linear-gradient(to left, #87c7df, #648896) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

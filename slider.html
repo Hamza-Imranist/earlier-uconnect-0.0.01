@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sliderJS</title>
+    <script>
+        var i = 0 ;
+        var time = 2000 ;
+        var image = [];
+        image[0] = "bgimg1.png" ; 
+        image[1] = "bgimg2.png" ;
+        image[2] = "bgimg3.png" ;
+        function changeImg(){
+            document.slider.src = image[i];
+            if ( i < image.length - 1) {
+                i++;
+            }
+            else {
+                i = 0 ;
+            }
+            setTimeout(() => {
+                changeImg();
+            }, time);
+        }
+        window.addEventListener("load",changeImg,false);
+    </script>
+</head>
+<body>
+    <img alt="image-slider" width="400" height="400" name="slider">
+</body>
+</html>
